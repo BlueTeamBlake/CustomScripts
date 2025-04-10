@@ -7,8 +7,7 @@ else
   TARGET=$1
 fi
 
-TERMINAL="gnome-terminal" # Change if needed
-
+TERMINAL="xfce4-terminal" # Change if needed 
 
 # Nmap
 $TERMINAL -- bash -c "echo '[*] Starting port and service discovery...'; nmap -sC -sV -Pn -T4 $TARGET; exec bash" &
